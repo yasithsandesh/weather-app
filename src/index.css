@@ -1,13 +1,238 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.mainTitle-light {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #121212;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.mainTitle-dark {
+    font-weight: 700;
+    font-size: 2rem;
+    color: white;
+}
+
+
+.btn-start {
+    background-color: #BB86FC;
+    width: 10rem;
+    height: 4rem;
+    color: white;
+    border-radius: 50px;
+}
+
+.p-light {
+    background-color: #DBDCDE;
+}
+
+.p-dark {
+    background-color: #121212;
+}
+
+
+.icon {
+    color: white;
+    font-size: 30px !important;
+}
+
+.icon-div {
+    background-color: #03DAC5;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.reg-input-icon {
+    margin-right: 10px;
+}
+
+.reg-input {
+    background-color: #ffffff;
+    width: 100%;
+    height: 3rem;
+    border-radius: 10px;
+    outline: none;
+}
+
+.reg-input-box {
+    background-color: #ffffff;
+    width: 100%;
+    height: 3rem;
+    border-radius: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.reg-title-light{
+    font-weight: 700;
+    font-size: 2rem;
+    color: #121212;
+}
+
+.reg-title-dark{
+    font-weight: 700;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.reg-btn {
+    background-color: #BB86FC;
+    color: white;
+    width: 45%;
+    height: 3rem;
+    border-radius: 10px;
+}
+
+.reg-btn:hover{
+    background-color: #5e437e;
+    transition-duration: 1s;
+}
+
+.log-btn {
+    background-color: #03DAC5;
+    color: white;
+    width: 45%;
+    height: 3rem;
+    border-radius: 10px;
+   
+}
+
+.log-btn:hover{
+    background-color: #028376;
+    transition-duration: 1s;
+}
+
+.g-dark{
+    color: white;
+}
+
+.g-light{
+    color: #121212;
+}
+
+.gdiv{
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+
+.userBox{
+    background-color: #251b32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.helloTitle{
+    font-weight: 500;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.userBox-title{
+    font-weight: 700;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.img-icon-download{
+    color: #03DAC5;
+    font-size: 40px !important;
+}
+
+.userBox-main{
+    margin-bottom: 2rem;
+}
+
+.loc-div{
+ background-color: #251b32;
+ padding: 1rem;
+ border-radius: 10px;
+}
+
+.loc-title{
+    font-weight: 500;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.loc-icon{
+    color: #03DAC5;
+}
+
+.out-icon{
+    color: #03DAC5;
+    padding-right: 4px;
+    transition-duration: 1s;
+}
+
+.out-icon:hover{
+    color: #028376;
+}
+
+
+@media(min-width:768px) {
+
+    .mainTitle-light {
+        font-weight: 700;
+        font-size: 4rem;
+        color: #121212;
+    }
+
+    .mainTitle-dark {
+        font-weight: 700;
+        font-size: 4rem;
+        color: white;
+    }
+
+
+}
+
+@media(max-width:768px) {
+
+    .reg-btn {
+        height: 2rem;
+
+    }
+
+    .log-btn {
+        height: 2rem;
+
+    }
+
+
+    .reg-input {
+
+        height: 2rem;
+
+    }
+
+    .reg-input-box {
+
+        height: 2rem;
+
+    }
+
+
+    .reg-btn {
+        width: 100%;
+        height: 3rem;
+        border-radius: 10px;
+    }
+    
+    .log-btn {
+        width: 100%;
+        height: 3rem;
+        border-radius: 10px;
+       
+    }
+    
+    .userBox-main{
+        display: none;
+    }
 }
