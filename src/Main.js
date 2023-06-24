@@ -46,18 +46,12 @@ export default function Main() {
     },
   ];
 
- 
-
-  console.log(query.q);
-  console.log(img);
 
   const data = GetWeather(query.q);
 
   const typeImg = data?.weather?.[0]?.description;
 
   const [response, loading] = ReqImgApi(typeImg);
-
-  console.log(response);
 
   const [locData,zone,num,icon,Wtype] = AllDataFetch(data.coord);
 
